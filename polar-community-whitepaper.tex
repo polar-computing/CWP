@@ -2,6 +2,7 @@
 \usepackage{gensymb}
 \usepackage{wrapfig}
 \usepackage[hmargin=1in]{geometry}
+
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -24,6 +25,7 @@
 \usepackage{wrapfig}
 \newif\ifdraft
 \drafttrue
+
 \ifdraft
  \newcommand{\jhanote}[1]{ \textcolor{red}  {***SJ:#1}\xspace}
  \newcommand{\note}[1]{ \textcolor{blue}  {***Note:#1}\xspace}
@@ -122,21 +124,11 @@
   Engineering, University of Virginia} \\
 
 \vspace{0.25in}
-
-\large Abstract
-
-\end{center} {\it  The NSF funded Polar Computing Research Coordination
-Network NSF 1542110 (http://polar-computing.org) was tasked with analyzing
-opportunities and barriers in the uptake of high-performance \& distributed
-computing for polar science. Specifically the charge of the RCN was to: (i)
-Identify opportunities for, and barriers to, greater uptake of
-High-Performance and Distributed Cyberinfrastructure by polar sciences, (ii)
-Ensure that plans and designs for new and existing NSF-funded
-cyberinfrastructure efforts are cognizant of the needs of the Polar Science
-community, and (iii) Understand how best to educate a new generation of polar
-scientists in the skills needed to realize the opportunities and potential of
-HPDC. This community paper analyzes the state-of-play along these three
-dimensions.}
+\end{center} 
+\begin{center}
+	\large Abstract
+\end{center}
+\it  The NSF funded Polar Computing Research Coordination Network NSF 1542110~\cite{polar-computing-github} was tasked with analyzing opportunities and barriers in the uptake of high-performance \& distributed computing for polar science. Specifically the charge of the RCN was to: (i) Identify opportunities for, and barriers to, greater uptake of High-Performance and Distributed Cyberinfrastructure by polar sciences, (ii) Ensure that plans and designs for new and existing NSF-funded cyberinfrastructure efforts are cognizant of the needs of the Polar Science community, and (iii) Understand how best to educate a new generation of polar scientists in the skills needed to realize the opportunities and potential of HPDC. This community paper analyzes the state-of-play along these three dimensions
 
 \vspace{0.15in}
 
@@ -146,13 +138,13 @@ Climate change is having and will have a vast impact on the polar regions includ
 
 In addition to scaling and increasing the sophistication of existing approaches, there are unprecedented new opportunities and fundamentally different solutions emerging. It is no exaggeration that the onset of Machine Learning and other Artificial Intelligence methods have the potential to radically change the state-of-practice of Polar Sciences, as well as many observational data rich domain sciences.  These new opportunities in turn require the full utilization of existing and emerging high-performance computing capabilities. 
 
-Prior to the inception of a Research Coordination Network (RCN) on Polar Computing, at least two workshops had demonstrated the need for advanced cyberinfrastructure ~\cite{Skytland2016-jk} and high-performance and distributed computing (HPDC) to solve different polar scientific problems (Ref~\cite{hackathon_guide,Leckart2015-go}). The penetration of HPDC in polar science has been low relative to other domains and has not increased over time in proportion to the opportunities. For example, there were no polar science projects in the XRAC allocation portfolio at the time the RCN was commissioned. In response, this National Science Foundation funded Research Coordination Network (RCN) on Polar Computing (led by Jha, Lynch, Wyngaard, Nabrzyski, \& Yarmey/Pope http://polar-computing.org) was tasked with identifying opportunities, structural barriers, and proposals for how to overcome these barriers to bridge the current gap between the polar science and HPDC communities.
+Prior to the inception of a Research Coordination Network (RCN) on Polar Computing, at least two workshops had demonstrated the need for advanced cyberinfrastructure~\cite{Skytland2016-jk} and high-performance and distributed computing (HPDC) to solve different polar scientific problems (Ref~\cite{hackathon_guide,Leckart2015-go}). The penetration of HPDC in polar science has been low relative to other domains and has not increased over time in proportion to the opportunities. For example, there were no polar science projects in the XRAC allocation portfolio at the time the RCN was commissioned. In response, this National Science Foundation funded Research Coordination Network (RCN) on Polar Computing (led by Jha, Lynch, Wyngaard, Nabrzyski, \& Yarmey/Pope http://polar-computing.org) was tasked with identifying opportunities, structural barriers, and proposals for how to overcome these barriers to bridge the current gap between the polar science and HPDC communities.
 
 The RCN organized several stand alone workshops and hackathons, organized special sessions at relevant workshops/conferences (e.g., XSEDE 2016, SCAR 2016, Polar 2018) and participated in other community activities (e.g., other EarthCube and NSF organized meetings). It has identified several bottlenecks that currently limit the uptake of HPDC in the polar sciences. Whereas there are “bleeding edge” aspects of HPDC that are technically demanding and will always remain difficult to use, there remains a perception that initial access and basic utilization remains a fundamental barrier due to inadequate training and training opportunities for domain scientists. To this end, the RCN has undertaken several community-wide education and training activities, some quite general (e.g., using a shell environment) and some more narrowly targeted (e.g., HPC tools for high-resolution imagery), that in aggregate provide a solid foundation for future progress.
 
-As the Arctic DEM and Reference Elevation Model of Antarctica (REMA) projects ~\cite{Mimno2016-cw} demonstrate, there are clearly some polar science projects at the vanguard of using HPDC. These and other projects ~\cite{Laws2007-dj} demonstrate the potential impact, but such success are just emerging from the community. Beyond large scale projects like the ArcticDEM, polar science is also characterized by many, more highly focused projects often referred to as the “long tail of science”. These projects may be narrower in scope they can require vast quantities of HPC, storage and data. Whereas the RCN focused on ensuring that HPDC infrastructure works for projects of all sizes and scope, it primarily focused on identifying how to increase HPDC penetration across a larger swath of the polar science community. 
+As the Arctic DEM and Reference Elevation Model of Antarctica (REMA) projects~\cite{Mimno2016-cw} demonstrate, there are clearly some polar science projects at the vanguard of using HPDC. These and other projects~\cite{Laws2007-dj} demonstrate the potential impact, but such success are just emerging from the community. Beyond large scale projects like the ArcticDEM, polar science is also characterized by many, more highly focused projects often referred to as the ``long tail of science''. These projects may be narrower in scope they can require vast quantities of HPC, storage and data. Whereas the RCN focused on ensuring that HPDC infrastructure works for projects of all sizes and scope, it primarily focused on identifying how to increase HPDC penetration across a larger swath of the polar science community. 
 
-This report "The Landscape of High performance and distributed computing in polar science" aims to:
+This report ``The Landscape of High performance and distributed computing in polar science'' aims to:
 
  
 \begin{enumerate}[label=\roman*., itemsep=0pt, topsep=0pt]
@@ -167,13 +159,13 @@ This report "The Landscape of High performance and distributed computing in pola
 
 \item advocate for continued partnerships between polar and computer sciences, and
 
-\item quantify the “base level” of HPC required to produce the core products that are now required for researchers to meet their funded science goals.
+\item quantify the ``base level'' of HPC required to produce the core products that are now required for researchers to meet their funded science goals.
 
 \end{enumerate}
 
 \subsection*{Importance of Community Oriented Research Cyberinfrastructure}
 
-The term cyberinfrastructure "CI" is defined as a research environment, accessible over the internet, that supports all data processing steps from data acquisition, storage, management, integration, mining and visualization ~\cite{HackHolyoke_2016}. In addition to the software and hardware components, cyberinfrastructure also includes the personnel required to create and operate these resources and specialized advisors who can assist researchers in using these resources. In short, effective CI efficiently connects labs, data, computers, and researchers to facilitate scientific discovery. Perceived advantages of organized and balanced cyberinfrastructure include:
+The term cyberinfrastructure ``CI'' is defined as a research environment, accessible over the internet, that supports all data processing steps from data acquisition, storage, management, integration, mining and visualization~\cite{HackHolyoke_2016}. In addition to the software and hardware components, cyberinfrastructure also includes the personnel required to create and operate these resources and specialized advisors who can assist researchers in using these resources. In short, effective CI efficiently connects labs, data, computers, and researchers to facilitate scientific discovery. Perceived advantages of organized and balanced cyberinfrastructure include:
 
 \begin{enumerate}[label=\roman*., itemsep=0pt, topsep=0pt]
 
@@ -188,31 +180,25 @@ Although organized and balanced CI is necessary, judging by examples from Molecu
 
 We briefly mention some significant projects that are working to bring scalable Cyberinfrastructure to the Polar Science community. Some of these are sophisticated and scalable consumers of HPDC (ArcticDEM and REMA) with requirements long defined by the science community (NRC, 2007, 2017), others are smaller projects that use local computing resources. Taken together, they build on and represent several significant investments in centers responsible for data repositories and computation.
 
-\begin{description}
-  \item [ArcticDEM:] ArcticDEM is an NGA-NSF public-private initiative to automatedly produce a high-resolution, high quality, time-dependant, digital surface model (DSM) of the Arctic using optical stereo imagery, high-performance computing, and open source photogrammetry software. ArcticDEM encompasses all land area north of $60\degree N$. In addition, coverage includes all territory of Greenland, the State of Alaska in entirety, and the Kamchatka Peninsula of the Russian Federation. ArcticDEM data is constructed from in-track and cross-track high-resolution (~0.5 meter) imagery acquired by the DigitalGlobe constellation of optical imaging satellites and licensed through the NGA NextView contract. The majority of ArcticDEM data was generated from the panchromatic bands of the WorldView-1, WorldView-2, and WorldView-3 satellites. 
+\begin{description}[style=unboxed]
+	
+	\item [ArcticDEM:] ArcticDEM is an NGA-NSF public-private initiative to automatedly produce a high-resolution, high quality, time-dependant, digital surface model (DSM) of the Arctic using optical stereo imagery, high-performance computing, and open source photogrammetry software. ArcticDEM encompasses all land area north of $60\degree N$. In addition, coverage includes all territory of Greenland, the State of Alaska in entirety, and the Kamchatka Peninsula of the Russian Federation. ArcticDEM data is constructed from in-track and cross-track high-resolution (~0.5 meter) imagery acquired by the DigitalGlobe constellation of optical imaging satellites and licensed through the NGA NextView contract. The majority of ArcticDEM data was generated from the panchromatic bands of the WorldView-1, WorldView-2, and WorldView-3 satellites. 
   
-  \item [REMA:] The Reference Elevation Model of Antarctica (REMA) is a high resolution, time-stamped Digital Surface Model (DSM) of Antarctica initially at an 8-meter spatial resolution. It provides the first, high resolution (8-meter) terrain map of nearly the entire continent. REMA is constructed from millions of individual stereoscopic pairs of submeter imagery; each individual DEM was vertically registered to satellite altimetry measurements from Cryosat-2 and ICESat, resulting in absolute uncertainties   1m over most of the continent , and relative uncertainties of decimeters. Since each REMA grid point has a timestamp, any past or future point observation of elevation provides a measurement of elevation change. REMA may provide corrections for a wide range of remote sensing processing activities, such image orthorectification and interferometry, and provide constraints for geodynamic and ice flow modeling, mapping of grounding lines, and surface processes. REMA also provides a powerful new resource for field logistics planning.
+	\item [REMA:] The Reference Elevation Model of Antarctica (REMA) is a high resolution, time-stamped Digital Surface Model (DSM) of Antarctica initially at an 8-meter spatial resolution. It provides the first, high resolution (8-meter) terrain map of nearly the entire continent. REMA is constructed from millions of individual stereoscopic pairs of submeter imagery; each individual DEM was vertically registered to satellite altimetry measurements from Cryosat-2 and ICESat, resulting in absolute uncertainties   1m over most of the continent , and relative uncertainties of decimeters. Since each REMA grid point has a timestamp, any past or future point observation of elevation provides a measurement of elevation change. REMA may provide corrections for a wide range of remote sensing processing activities, such image orthorectification and interferometry, and provide constraints for geodynamic and ice flow modeling, mapping of grounding lines, and surface processes. REMA also provides a powerful new resource for field logistics planning.
 
-\item [ICEBERG: Imagery CI and Extensible Building-Blocks to Enhance Research in the Geosciences:]                                           
-The ICEBERG Project ~\cite{Hackathon} is building the cyberinfrastructure required to do imagery-enabled science at very large (e.g., continental) scales. Use cases to be developed include a Southern Ocean pack ice seal survey using deep learning and a pan-Antarctic land cover classification product. One of the emerging themes of the ICEBERG project is that machine learning and algorithms drawn from computer vision play a key, and perhaps underappreciated role in the future of imagery and big data-enabled geosciences, and they require specific cyberinfrastructure (GPUs, for example) that are less widely available.
+	\item [ICEBERG: Imagery CI and Extensible Building-Blocks to Enhance Research in the Geosciences:] The ICEBERG Project~\cite{Hackathon} is building the cyberinfrastructure required to do imagery-enabled science at very large (e.g., continental) scales. Use cases to be developed include a Southern Ocean pack ice seal survey using deep learning and a pan-Antarctic land cover classification product. One of the emerging themes of the ICEBERG project is that machine learning and algorithms drawn from computer vision play a key, and perhaps underappreciated role in the future of imagery and big data-enabled geosciences, and they require specific cyberinfrastructure (GPUs, for example) that are less widely available.
+
+	\item [Engaging the Greenland Ice Sheet-Ocean (GRISO) Science Network:] The goal of this project~\cite{Aboab2016-tk} is to enhance multi-disciplinary activities and collaboration through the establishment of the GRISO (Greenland Ice Sheet-Ocean) Science Network using scientists and cyberinfrastructure experts.
+
+	\item [Polar Globe Power Up Polar Cyberinfrastructure using M-cube Visualization to support polar Climate Data:] The Polar Globe~\cite{major_league} develops and implements visualization techniques that will serve as an Arctic research platform and to support polar climate studies.
  
-\item [Engaging the Greenland Ice Sheet-Ocean (GRISO) Science Network:]
+	\item[PolarGrid - Cyberinfrastructure for Polar Science:] The Polar Grid project at Indiana University was designed to help scientists better understand and examine the state of polar ice sheets. The PolarGrid NSF Project supported advanced computational methods to process a large amount of the collected data from the polar regions. PolarGrid used the open data access standard technology to make the collected data processing, simulating outside the PolarGrid and for the majority of the polar science community.
 
-The goal of this project ~\cite{Aboab2016-tk} is to enhance multi-disciplinary activities and collaboration through the establishment of the GRISO (Greenland Ice Sheet-Ocean) Science Network using scientists and cyberinfrastructure experts.
+	\item[Center for Remote Sensing of Ice Sheets (CReSIS):] In 2005, NSF established CReSIS  with the goal of enhancing the quantity, quality, and use of radar data collected over the Greenland and Antarctic ice sheets. Since 2010, Indiana University and the Center for Remote Sensing of Ice Sheets (CReSIS) at the University of Kansas have worked with NASA's Operation IceBridge to collect data about polar ice caps. IU provides IT support for the missions and assists in processing the enormous amounts of data the mission generates, helping improve the models of the physical interactions of glaciers, sea ice, and ice sheets for scientists to study. IU has created on-plane storage and computational systems used by scientists during flights to monitor activities. What once took researchers 18+ hours to view first glance data products now takes less than 10 seconds thus allowing researchers on those flights to make adjustments in real time.   CReSIS REU Site was established with ideas of supporting activities in Polar science, education, diversity and outreach and will train the next generation of scientists, engineers and educators interested in polar science and cyberinfrastructure.
 
-\item [Polar Globe Power Up Polar Cyberinfrastructure using M-cube Visualization to support polar Climate Data:]
- The Polar Globe \cite{major_league} develops and implements visualization techniques that will serve as an Arctic research platform and to support polar climate studies.
+	\item[National Snow and Ice Data Center (NSIDC):] NSIDC supports polar and cryospheric research. NSIDC manages and distributes scientific data, creates tools for data access, supports data users, performs scientific research, and educates the public about the cryosphere.
  
- \item[PolarGrid - Cyberinfrastructure for Polar Science:]
-  The Polar Grid project at Indiana University was designed to help scientists better understand and examine the state of polar ice sheets. The PolarGrid NSF Project supported advanced computational methods to process a large amount of the collected data from the polar regions. PolarGrid used the open data access standard technology to make the collected data processing, simulating outside the PolarGrid and for the majority of the polar science community.
-
-\item[Center for Remote Sensing of Ice Sheets (CReSIS):] In 2005, NSF established CReSIS  with the goal of enhancing the quantity, quality, and use of radar data collected over the Greenland and Antarctic ice sheets. Since 2010, Indiana University and the Center for Remote Sensing of Ice Sheets (CReSIS) at the University of Kansas have worked with NASA's Operation IceBridge to collect data about polar ice caps. IU provides IT support for the missions and assists in processing the enormous amounts of data the mission generates, helping improve the models of the physical interactions of glaciers, sea ice, and ice sheets for scientists to study. IU has created on-plane storage and computational systems used by scientists during flights to monitor activities. What once took researchers 18+ hours to view first glance data products now takes less than 10 seconds thus allowing researchers on those flights to make adjustments in real time.   CReSIS REU Site was established with ideas of supporting activities in Polar science, education, diversity and outreach and will train the next generation of scientists, engineers and educators interested in polar science and cyberinfrastructure.
-
-\item[National Snow and Ice Data Center (NSIDC):]
- NSIDC supports polar and cryospheric research. NSIDC manages and distributes scientific data, creates tools for data access, supports data users, performs scientific research, and educates the public about the cryosphere.
- 
- \item[Polar Geospatial Center (PGC):]
-  The PGC at the University of Minnesota provides geospatial support, mapping, and GIS/remote sensing solutions to researchers and logistics groups in the polar science community. PGS was integral to development and leads support of both ArcticDEM and REMA described above, and has been an active participant in many related RCN efforts.
+	\item[Polar Geospatial Center (PGC):] The PGC at the University of Minnesota provides geospatial support, mapping, and GIS/remote sensing solutions to researchers and logistics groups in the polar science community. PGS was integral to development and leads support of both ArcticDEM and REMA described above, and has been an active participant in many related RCN efforts.
 
 \end{description}
 
@@ -220,7 +206,7 @@ The goal of this project ~\cite{Aboab2016-tk} is to enhance multi-disciplinary a
 Polar Sciences has a mix of black-box HPC users and scientists who need to develop methods and algorithms for use on HPC resources. For both types of polar researchers HPDC resources and capabilities should be delivered as a seamless, scalable service. However, both user types face barriers arising from an intrinsic and often times unavoidable complexity in using HPDC resources. Some, but not all the complexity of using HPDC resources can be addressed by adequate experience and exposure to software best practices, as provided in training such as software carpentry. Further, many researchers are simply unaware of computing resources available to them, whereas others may lack the appropriate training required to take advantage of HPDC resources they may already have access to. Put together, these reinforce the importance of education and training.
 
 \subsection*{Education and Training}
-Despite these data- and compute-intensive scientific needs, polar science (along with other disciplines) is poorly represented in the use of HPDC resources. Through informal community engagement, a Polar-HPDC workshop in 2014 ~\cite{hackathon_guide}, and a 2016 hackathon, the Polar Computing RCN identified two primary reasons for this gap:
+Despite these data- and compute-intensive scientific needs, polar science (along with other disciplines) is poorly represented in the use of HPDC resources. Through informal community engagement, a Polar-HPDC workshop in 2014~\cite{hackathon_guide}, and a 2016 hackathon, the Polar Computing RCN identified two primary reasons for this gap:
 \begin{enumerate}
 \item a lack of community awareness of available compute resources, and
 \item a lack of appropriate training for scientists interested in using HPDC for science applications.
@@ -244,7 +230,7 @@ The two most significant changes made following the first training event were to
 \item to bring teams of researchers to a hackathon or training event rather than form teams from multiple institutions.
 \end{enumerate}
 
-This last change was particularly beneficial because it minimized the amount of time spent "learning how to work as a group", and it provided more opportunities for teams to continue working on challenges after the event was finished.
+This last change was particularly beneficial because it minimized the amount of time spent ``learning how to work as a group'', and it provided more opportunities for teams to continue working on challenges after the event was finished.
 
 In increasing the amount of formal training at our events, we found the materials available through the Software Carpentry (SWC) Foundation invaluable. HPC Carpentry was unfortunately not available in its current form at the time, however, the SWC materials on bash, git, and python were particularly useful and provided the right balance of demonstration and hand-on practice. We found the lack of polar-specific examples to have at most a minor impact on learning of the basic materials, and were able to supplement the pre-existing lessons with examples of how polar scientists were using HPDC in their work. While increasing the amount of time spent in formal classroom instruction requires finding sufficient volunteer tutors, SWC has done an excellent job training new instructors and the SWC instructors at our final event were both polar researchers.  In our first event we had attempted to include computer science experts in the hackathon, under the assumption that offering the potential for new collaborations might be an attractive draw. However, this was more difficult than anticipated, and the difficulty of engaging computer scientists in this work (as opposed to training domain scientists in computation) remains a stubborn challenge for which we have no easy remedies.
 
@@ -255,7 +241,7 @@ The key education and training challenges we have identified are:
 \begin{enumerate}
     \item Pace of technological change: HPDC tools and available resources are changing too fast for a non-domain-specialist to keep up to date.
     \item Momentum:  There is significant momentum behind using known and trusted methods in an environment that does not provide for high risk non-domain exploration.
-    \item Limited Time:  Across the spectrum of undergraduate through experienced PI, practicing and training domain scientists do not have the ‘bandwidth’ to accommodate additional core skills training.
+    \item Limited Time:  Across the spectrum of undergraduate through experienced PI, practicing and training domain scientists do not have the ``bandwidth'' to accommodate additional core skills training.
     \item Inappropriate material: Most HPDC infrastructure resources have training materials but these are overwhelmingly targeted at a computer expert audience and therefore assume a significant amount of knowledge and even language terms that domain scientists are unlikely to have or understand.
     \item Limited HPDC Support Staff on Campuses: Only campuses with large scale HPDC infrastructure appear to have sufficient on-site staff with the time to train and work with domain scientists. 
     \item High Barriers: For a non-expert, the final step of actually porting research onto an HPDC resource, even after extensive abstract training, is often simply still a barrier too high to be crossed without intensive support.
@@ -269,7 +255,7 @@ One of the big barriers to the uptake of HPDC we identified over the course of o
 The polar science community's dependance on data produced on NSF funded HPC became clear after the release of ArcticDEM and REMA.  PI's quickly applied the DSMs to science that occurs on the surface of the earth, including geomorphology, the carbon cycle, population dynamics, and ice mass balance.  The production of DSMs is computationally demanding, and is currently centralized activity for which the PGC is responsible. The production of DSMs presents unique policy and allocation considerations.  Currently as the central data provider, the PGC must compete for HPC allocations to produce DSMs; however the entire community  requires the procesed end-products.  It is imperative that predictable and sustainable access to HPC resources be arranged to ensure the uninterrupted capability to generate DSM and other products upon which the community critically depends. 
 
 \section*{Opportunities}
-An analysis of other scientific domains suggests as the penetration of HPDC (and computing as a whole) increases, the impact of HPDC changes. In initial stages, scientists do simple things faster, maybe larger and possibly some times even better. As the level of sophistication with HPDC increases, the use of HPDC evolves from solving 'old' problems faster, to solving 'old' problems better (improving estimates of uncertainty, for example), to actually solving new problems that were not previously feasible. This HPDC transition has been borne out in many other communities, such as molecular sciences and engineering, and there is no reason to suspect that such a transition is not also possible in polar sciences. 
+An analysis of other scientific domains suggests as the penetration of HPDC (and computing as a whole) increases, the impact of HPDC changes. In initial stages, scientists do simple things faster, maybe larger and possibly some times even better. As the level of sophistication with HPDC increases, the use of HPDC evolves from solving ``old'' problems faster, to solving ``old'' problems better (improving estimates of uncertainty, for example), to actually solving new problems that were not previously feasible. This HPDC transition has been borne out in many other communities, such as molecular sciences and engineering, and there is no reason to suspect that such a transition is not also possible in polar sciences. 
 
 Simulation and modeling of physical phenomena have historically been major consumers and drivers of high-performance distributed computing resources. Although significant advances have been made in both the cyberinfrastructure (software, data analysis etc.) for simulation \& modeling, and the resulting science, there remain ongoing challenges in transitioning to the next generation of HPC platforms and architectures, as well as in ensuring the software capabilities stay current. The challenges faced and opportunities for the Polar simulation and modeling community are mostly in line with and shared by the broader simulation and modeling community. With no intention of undermining the opportunity arising from advances in simulation and modeling, we highlight a couple of new opportunities that have high potential return-on-investment for the polar science community, both for individual researchers and for federal investment for polar cyberinfrastructure.
 
@@ -289,7 +275,7 @@ This requires not only new systems for uniting imagery and HPDC but also a great
 A new NSF EarthCube project ICEBERG is dedicated to building cyberinfrastructure to solve the first of these challenges, though longer term investment in collaborations between the machine learning community and the polar community will be needed if the polar community is to fully reap the benefits of its commercial imagery assets.
 
 \section*{Recommendations}
-\begin{description}
+\begin{description}[style=unboxed]
   \item[1. Lowering the barrier to access to National CI:]
   Lower the barrier to accessing National CI through targeted appropriate education and training.
 Support use of commercial, cloud based HPC resources as a gateway to institutional and federal HPC resources.
@@ -320,6 +306,7 @@ A large number of funded science goals are now dependant on products such as Arc
 
 
 \bibliographystyle{unsrt}
+
 \cite{xsede_training}
 \cite{NRT}
 \cite{Allen2011-qx}
@@ -350,7 +337,7 @@ A large number of funded science goals are now dependant on products such as Arc
 \cite{Fakhri2016-pm}
 \cite{Nelson2007}
 \cite{HPC_Carpentry}
-\cite{polar-computing-github}
+
 \cite{National2006}
 \cite{bloom}
 \cite{bloom-vanderbilt}
